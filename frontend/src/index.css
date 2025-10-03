@@ -1,12 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* Custom styles */
 body {
-  @apply bg-gray-50 text-gray-900;
+  background-color: rgb(249 250 251);
+  color: rgb(17 24 39);
 }
 
 textarea {
-  @apply p-2 border rounded;
+  padding: 0.5rem;
+  border: 1px solid rgb(209 213 219);
+  border-radius: 0.375rem;
 }
