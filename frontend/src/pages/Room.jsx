@@ -82,7 +82,6 @@ export default function Room() {
     if (!text) return
     const payload = { roomId, message: text, user: displayName, timestamp: Date.now() }
     socket.emit('chat-message', payload)
-    setMessages(m => [...m, payload])
     setText('')
   }
 
