@@ -10,6 +10,9 @@ const Room = require('./models/Room')
 const app = express()
 app.use(express.json())
 app.use(cors())
+app.get("/ping", (req, res) => {
+  res.status(200).send("OK");
+});
 
 // MongoDB Connection
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/vsg'
